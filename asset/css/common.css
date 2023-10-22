@@ -1,0 +1,409 @@
+/* Bootstrap Reset Css Start */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    display: inline-block;
+}
+
+input,
+.form-control {
+    outline: 0;
+    box-shadow: none;
+}
+
+/*Bootstrap Reset Css End */
+body {
+    font-family: var(--primary-font);
+}
+
+p {
+    font-family: var(--secondary-font);
+}
+.btn_a{
+    background-color: var(--Paragraph-Color);
+    color: var(--Common-Color);
+    text-align: center;
+    font-family: var(--primary-font);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+    padding: 13px 13px;
+    margin-right: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.btn_a::after{
+    content: '\f178';
+    font-family: 'font Awesome 6 free';
+    font-weight: 700;
+    margin-left: 10px;
+}
+.btn_a:hover{
+    background-color: var(--light-hover-color);
+}
+
+/* =============================common css start============================= */
+
+/* variable css start */
+:root {
+    --primary-font: "Josefin Sans", sans-serif;
+    --secondary-font: "Roboto", sans-serif;
+
+    --Common-Color: #FFFFFF;
+    --text-color: #11161E;
+    --Primary-Color: #FF5645;
+    --Paragraph-Color: #444444;
+    --light-bg-Color: #F1F1F1;
+    --middium-BG: #F1F3F4;
+    --derk-color: #BDBDBD;
+    --black: #000000;
+    --light-hover-color: #FF6F61;
+    --derk-hover-color: #151A32;
+
+}
+
+/* variable css end */
+
+/* top bar css start */
+#top_bar {
+    background-color: var(--derk-hover-color);
+    color: var(--Common-Color);
+    padding: 11px 0px;
+}
+
+#top_bar .left i,
+#top_bar .left span:last-child {
+    color: var(--light-hover-color);
+}
+
+#top_bar .right ul:first-child li a,
+#top_bar .right ul li select {
+    color: var(--Common-Color);
+    font-family: var(--secondary-font);
+    font-size: 16px;
+    line-height: 28px;
+    text-transform: capitalize;
+    background: none;
+    border: none;
+    transition: 0.4s;
+}
+
+#top_bar .right ul:first-child li {
+    border-right: 1px solid #8C8C8C;
+    padding: 0px 20px;
+}
+
+#top_bar .right ul:nth-child(2) li a {
+    color: var(--Common-Color);
+    font-size: 20px;
+    padding-left: 10px;
+    transition: 0.4s;
+}
+
+#top_bar .right ul li a:hover,
+#top_bar .right ul li select:hover {
+    color: #FF5645;
+    cursor: pointer;
+}
+
+/* top bar css end */
+
+/* nav bar css start */
+#nav_bar #menu ul:first-child li a {
+    font-family: var(--primary-font);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: var(--text-color);
+    padding: 37px 21.5px;
+    text-transform: capitalize;
+    transition: 0.4s;
+}
+
+#nav_bar #menu ul:nth-child(2) li button,
+#nav_bar #menu ul:nth-child(2) li a {
+    font-size: 24px;
+    color: var(--derk-hover-color);
+    padding-left: 20px;
+    border: none;
+    background: none;
+}
+
+#nav_bar #menu ul:nth-child(2) li button:hover,
+#nav_bar #menu ul:nth-child(2) li a i:hover,
+#nav_bar #menu ul li a:hover,
+#nav_bar #menu ul li a.active {
+    color: var(--light-hover-color);
+}
+
+#nav_bar #menu ul:nth-child(2) li button:last-child {
+    position: relative;
+}
+
+#nav_bar #menu ul:nth-child(2) li button span {
+    color: var(--Common-Color);
+    font-family: var(--primary-font);
+    font-size: 14px;
+    line-height: 14px;
+    position: absolute;
+    top: 0px;
+    right: -4px;
+    background-color: var(--light-hover-color);
+    border-radius: 50%;
+    padding: 2px 3px;
+}
+
+/* nav bar css end */
+
+
+
+
+/* footer css start */
+
+footer {
+    background-color: var(--text-color);
+
+}
+
+/* footer_upper css start */
+#footer_upper {
+    padding: 76px 0px;
+}
+
+#footer_upper div ul li a i {
+    width: 40px;
+    font-size: 24px;
+    color: var(--Paragraph-Color);
+    background-color: var(--Common-Color);
+    padding: 8px;
+    margin: 0 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.line {
+    border-bottom: 1px solid #E0E0E0;
+
+}
+
+#footer_upper div ul li a i:hover {
+    color: var(--Common-Color);
+    background-color: var(--light-hover-color);
+}
+
+/* footer_upper css end */
+/* footer_lower css start */
+#footer_lower {
+    padding: 70px 0;
+}
+
+#footer_lower h4 {
+    padding-bottom: 22px;
+    font-family: var(--primary-font);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 34px;
+}
+
+#footer_lower a,
+#footer_lower {
+    font-family: var(--secondary-font);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    color: var(--Common-Color);
+    text-transform: capitalize;
+    transition: 0.5s;
+}
+
+#footer_lower .footer_lower_item ul li a::before {
+    content: '\f054';
+    font-family: "Font Awesome 6 free";
+    font-weight: 700;
+    transition: 0.5s;
+    padding-right: 16px;
+}
+
+#footer_lower ul li address{
+    line-height: 25px;
+}
+
+#footer_lower a:hover,
+#footer_lower address:hover,
+#footer_lower table tr td:hover {
+    color: var(--light-hover-color);
+    cursor: pointer;
+}
+
+#footer_lower ul li i {
+    color: var(--light-hover-color);
+}
+
+#footer_lower .widget-8 p {
+    margin-bottom: 10px;
+}
+
+#footer_lower .widget-8 div input {
+    width: 312px;
+    height: 50px;
+}
+
+#footer_lower .widget-8 div button {
+    background-color: var(--light-hover-color);
+    color: var(--Common-Color);
+    text-align: center;
+    font-family: var(--primary-font);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+    border: none;
+    padding: 12px 17px;
+    width: 114px;
+    height: 50px;
+}
+
+#buttom_footer {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 21px 0px;
+}
+
+#buttom_footer p {
+    color: var(--Common-Color);
+}
+
+#buttom_footer span {
+    color: var(--light-hover-color);
+}
+
+/* footer_lower css end */
+/* footer css end */
+
+
+/* search css start */
+#search_modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.9);
+    transform: scale(0) rotate(50deg);
+    transform-origin: left;
+    transition: 0.5s;
+}
+
+#search_modal.show {
+    transform: scale(1) rotate(0deg);
+}
+
+#search_modal form {
+    border: 2px solid var(--light-hover-color);
+    border-radius: 40px;
+    padding: 15px 20px;
+}
+
+#search_modal form input {
+    padding: 5px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: var(--Common-Color);
+    text-align: center;
+}
+
+#search_modal form input::placeholder {
+    color: var(--Common-Color);
+}
+
+#search_modal form button {
+    background: none;
+    border: none;
+    color: var(--Common-Color);
+    font-size: 25px;
+}
+
+#search_modal #search_close_btn {
+    width: 40px;
+    height: 40px;
+    background: none;
+    border-radius: 50%;
+    border: 1px solid var(--light-hover-color);
+    color: var(--light-hover-color);
+    font-size: 20px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    transition: 0.4s;
+}
+
+#search_modal #search_close_btn:hover {
+    background: var(--Common-Color);
+    border-color: var(--Common-Color);
+    transform: rotate(90deg);
+}
+/* search css end */
+/* =============================common page css end============================= */
+
+
+
+/* ====================Shop-Contract Page common css start====================== */
+
+/* common banner css start */
+#banner {
+    height: 400px;
+    background-size: cover !important;
+    background-position: center !important;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: relative;
+
+}
+
+#banner::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#banner h2 {
+    color: var(--Common-Color);
+    font-family: var(--primary-font);
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58px;
+    padding-bottom: 16px;
+    text-transform: capitalize;
+}
+
+#banner nav ol li,
+#banner nav ol li::before,
+#banner nav ol li a {
+    color: var(--Common-Color);
+    font-family: var(--secondary-font);
+    font-size: 16px;
+    line-height: 28px;
+}
+
+
+
+
+
+
+/* ========================Shop-Contract Page common css end======================= */
