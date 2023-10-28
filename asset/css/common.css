@@ -31,36 +31,6 @@ input,
 }
 
 /*Bootstrap Reset Css End */
-body {
-    font-family: var(--primary-font);
-}
-
-p {
-    font-family: var(--secondary-font);
-}
-.btn_a{
-    background-color: var(--Paragraph-Color);
-    color: var(--Common-Color);
-    text-align: center;
-    font-family: var(--primary-font);
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 30px;
-    padding: 13px 13px;
-    margin-right: 10px;
-    transition: 0.5s;
-    cursor: pointer;
-}
-.btn_a::after{
-    content: '\f178';
-    font-family: 'font Awesome 6 free';
-    font-weight: 700;
-    margin-left: 10px;
-}
-.btn_a:hover{
-    background-color: var(--light-hover-color);
-}
-
 /* =============================common css start============================= */
 
 /* variable css start */
@@ -78,10 +48,17 @@ p {
     --black: #000000;
     --light-hover-color: #FF6F61;
     --derk-hover-color: #151A32;
-
 }
 
 /* variable css end */
+body {
+    font-family: var(--primary-font);
+    font-weight: 400;
+}
+
+p {
+    font-family: var(--secondary-font);
+}
 
 /* top bar css start */
 #top_bar {
@@ -128,6 +105,9 @@ p {
 /* top bar css end */
 
 /* nav bar css start */
+#nav_bar img{
+    
+}
 #nav_bar #menu ul:first-child li a {
     font-family: var(--primary-font);
     font-size: 16px;
@@ -244,7 +224,7 @@ footer {
     padding-right: 16px;
 }
 
-#footer_lower ul li address{
+#footer_lower ul li address {
     line-height: 25px;
 }
 
@@ -297,6 +277,10 @@ footer {
 
 /* footer_lower css end */
 /* footer css end */
+/* home common css start */
+
+
+
 
 
 /* search css start */
@@ -358,6 +342,7 @@ footer {
     border-color: var(--Common-Color);
     transform: rotate(90deg);
 }
+
 /* search css end */
 /* =============================common page css end============================= */
 
@@ -369,12 +354,9 @@ footer {
 #banner {
     height: 400px;
     background-size: cover !important;
-    background-position: center !important;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-position: center !important;    
     position: relative;
-
 }
-
 #banner::before {
     content: '';
     position: absolute;
@@ -401,9 +383,111 @@ footer {
     line-height: 28px;
 }
 
-
-
-
-
-
 /* ========================Shop-Contract Page common css end======================= */
+
+
+.slider_dot li button{    
+    width: 10px;
+    height: 5px;
+    font-size: 0px;
+    border-radius: 5px;
+    border: none;
+    background: none;
+    background-color: var(--Common-Color);
+    margin-right: 3px;
+}
+.slider_dot li.slick-active button {
+    width: 20px;
+    background-color: var(--Primary-Color);
+}
+
+
+.btn_a {
+    background-color: var(--Paragraph-Color);
+    color: var(--Common-Color);
+    text-align: center;
+    font-family: var(--primary-font);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+    padding: 13px 13px;
+    margin-right: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.btn_a::after {
+    content: '\f178';
+    font-family: 'font Awesome 6 free';
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+.btn_a:hover {
+    background-color: var(--light-hover-color);
+}
+
+.heading {
+    padding: 96px 0px 24px;
+    color: var(--text-color);
+    text-align: center;    
+    font-family: var(--primary-font);
+    font-size: 36px;
+    font-weight: 700;
+    text-transform:capitalize;
+}
+
+.ster {
+    display: block;
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+}
+
+.product_slider_item {
+    border: 1px solid var(--derk-color);
+    background: var(--Common-Color);
+    margin: 0px 12px;
+}
+
+.tag {
+    width: 26px;
+    height: 52px;
+    border-radius: 0px 0px 13px 13px;
+    background: var(--light-hover-color);
+    color: var(--Common-Color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+
+}
+
+.span_roteted {
+    transform: rotate(-90deg);
+    text-align: center;
+   
+}
+
+.bt_a {    
+    color: var(--Common-Color);
+    text-align: center;
+    font-family: var(--primary-font);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+    margin-right: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.bt_a::after {
+    content: '\f178';
+    font-family: 'font Awesome 6 free';
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+.bt_a:hover {
+    color: var(--light-hover-color);
+}
+
+/* home common css end */
