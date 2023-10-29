@@ -127,24 +127,25 @@ Table of content
 }
 
 
-#product_banner .product_banner_detail_1 {
-    height: 300px;
+#product_banner .product_banner_detail_1 {    
     background-size: cover;
     background-position: center;
     position: relative;
-
+    padding-bottom:24px;
 }
 
 #product_banner .product_banner_detail_1 .product_banner_detail_1_info {
     background-color: rgba(0, 0, 0, 0.4);
     width: 90%;
-    height: 70%;
+    height: 75%;
     position: absolute;
     top: 20px;
     left: 20px;
     transform: scale(0);
+    transform-origin:bottom ;
+    
     text-align: center;
-    transition: 0.8s;
+    transition: 0.3s;
 }
 
 #product_banner .product_banner_detail_1:hover .product_banner_detail_1_info {
@@ -152,8 +153,6 @@ Table of content
 }
 
 #product_banner .product_banner_detail_2 {
-
-    height: 300px;
     background-size: cover;
     background-position: center;
     position: relative;
@@ -164,13 +163,14 @@ Table of content
 
     background-color: rgba(0, 0, 0, 0.4);
     width: 90%;
-    height: 70%;
+    height:85%;
     position: absolute;
     top: 20px;
     left: 20px;
     transform: scale(0);
+    transform-origin:bottom ;
     text-align: center;
-    transition: 0.8s;
+    transition: 0.5s;
 }
 
 #product_banner .product_banner_detail_2:hover .product_banner_detail_2_info {
@@ -188,14 +188,15 @@ Table of content
 #product_banner .product_banner_detail_3 .product_banner_detail_3_info {
 
     background-color: rgba(102, 88, 88, 0.4);
-    width: 95%;
-    height: 95%;
+    width: 93%;
+    height: 93%;
     position: absolute;
     top: 20px;
-    left: 20px;
+    left: 20px;    
     transform: scale(0);
+    transform-origin:bottom ;
     text-align: center;
-    transition: 0.8s;
+    transition: 0.5s;
 }
 
 #product_banner .product_banner_detail_3:hover .product_banner_detail_3_info {
